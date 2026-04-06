@@ -1,16 +1,44 @@
-# React + Vite
+# Judiciary Information System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend application for the Judiciary Information System, built using React, Vite, and Bootstrap.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **React 19**
+- **Vite**
+- **React Router DOM**
+- **Bootstrap 5**
+- **Axios**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Getting Started
 
-## React Compiler
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Installation
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+### Running the Development Server
+To start the Vite development server, run:
+```bash
+npm run dev
+```
+The application will usually be available at `http://localhost:5173`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Building for Production
+To build the application for production, run:
+```bash
+npm run build
+```
+
+### Linting
+To check for any lint errors:
+```bash
+npm run lint
+```

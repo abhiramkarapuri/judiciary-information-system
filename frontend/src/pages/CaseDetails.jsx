@@ -93,11 +93,6 @@ function CaseDetails(){
     }
   }
 
-  const HearingStatusBadge = () => {
-    if(caseData.closed) return <span className="badge closed" style={{marginLeft:"15px", fontSize:"1rem"}}>Closed</span>
-    return <span className="badge active" style={{marginLeft:"15px", fontSize:"1rem"}}>Active</span>
-  }
-
   return (
     <>
       <Navbar/>
@@ -106,7 +101,11 @@ function CaseDetails(){
 
         <h2 className="case-title">
           <span>{caseData.caseTitle}</span>
-          <HearingStatusBadge />
+          {caseData.closed ? (
+            <span className="badge closed" style={{marginLeft:"15px", fontSize:"1rem"}}>Closed</span>
+          ) : (
+            <span className="badge active" style={{marginLeft:"15px", fontSize:"1rem"}}>Active</span>
+          )}
         </h2>
 
         <div className="case-details-card">
